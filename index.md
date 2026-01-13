@@ -1,6 +1,10 @@
 ---
 layout: default
-title: Home
+title: 링크 모음
 ---
 
-# 테스트 페이지
+## 링크 목록
+
+{% for link in site.data.links %}
+- [{{ link.title }}]({{ link.url }})
+{% endfor %}
